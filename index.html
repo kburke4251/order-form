@@ -14,25 +14,32 @@
   <h1>Order Now!</h1>
 
   <form action="thanks.html" method="post">
-
-  Name:<input type="text" name="name"><br>
-  Address:<input type="text" name="address"><br>
-  City:<input type="text" name="city">
-  State:<input type="text" name="state" maxlength="2" size="2">
-  Zip:<input type="text" name="zip" maxlength="5" size="5"><br><br>
-  Size:
-  <select name="Size:">
-    <option value="small">Small</option>
-    <option value="Medium">Medium</option>
-    <option value="Large">Small</option>
-  </select>
-
-  Quantity:<input type="text" name="quantity" maxlength="5" size="5"><br><br>
-  Card Type:
-      <input type="radio" name="card" value="Visa"> Visa
-      <input type="radio" name="card" value="Master Card"> Master Card
-      <input type="radio" name="card" value="Discover">Discover<br>
-  Card Number:<input type="text" name="cardnumber"><br><br>
+    <fieldset>
+      <legend>Shipping Information</legend>
+        Name:<input type="text" name="name"><br>
+        Address:<input type="text" name="address"><br>
+        City:<input type="text" name="city">
+        State:<input type="text" name="state" maxlength="2" size="2">
+        Zip:<input type="text" name="zip" maxlength="5" size="5"><br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Item Description</legend>
+        Size:
+          <select name="Size:">
+            <option value="small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Small</option>
+          </select>
+        Quantity:<input type="text" name="quantity" maxlength="5" size="5"><br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Credit Card Information</legend>
+        Card Type:
+          <input type="radio" name="card" value="Visa"> Visa
+          <input type="radio" name="card" value="Master Card"> Master Card
+          <input type="radio" name="card" value="Discover">Discover<br>
+        Card Number:<input type="text" name="cardnumber"><br><br>
+    </fieldset>
 
   <input type="submit" value="Submit">
 </form>
