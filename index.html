@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Order Now!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial scale=1">
+<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <h1>Order Now!</h1>
+
+  <form action="thanks.html">
+  Name:
+  <input type="text" name="name">
+  <br>
+  Address:
+  <input type="text" name="address">
+  <br>
+  City:
+  <input type="text" name="city">
+  State:
+  <input type="text" name="state" maxlength="2" size="2">
+  Zip:
+  <input type="text" name="zip" maxlength="5" size="5"><br><br>
+  Size:
+  <select name="Size:">
+    <option value="small">Small</option>
+    <option value="Medium">Medium</option>
+    <option value="Large">Small</option>
+  </select>
+
+  Quantity:
+  <input type="text" name="quantity" maxlength="5" size="5"><br><br>
+  Card Type:
+  <input type="radio" name="card" value="Visa"> Visa
+  <input type="radio" name="card" value="Master Card"> Master Card
+  <input type="radio" name="card" value="Discover">Discover<br>
+  Card Number:
+  <input type="text" name="cardnumber"><br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
