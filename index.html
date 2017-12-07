@@ -16,32 +16,49 @@
   <form action="thanks.html" method="post">
     <fieldset>
       <legend>Shipping Information</legend>
-        Name:<input type="text" name="name"><br>
-        Address:<input type="text" name="address"><br>
-        City:<input type="text" name="city">
-        State:<input type="text" name="state" maxlength="2" size="2">
-        Zip:<input type="text" name="zip" maxlength="5" size="5"><br><br>
+        <label for="name">Name:</label>
+          <input id="name" type="text" name="name">
+            <br>
+        <label for="address">Address:</label>
+          <input id="address" type="text" name="address">
+            <br>
+        <label for="city">City:</label>
+          <input id="city" type="text" name="city">
+        <label for="state">State:</label>
+          <input id="state" type="text" name="state" maxlength="2" size="2">
+        <label for="zip">Zip:</label>
+          <input id="zip" type="text" name="zip" maxlength="5" size="5">
+            <br><br>
     </fieldset>
     <fieldset>
       <legend>Item Description</legend>
-        Size:
-          <select name="Size:">
+        <label for="size">Size:</label>
+          <select id="size" name="size">
             <option value="small">Small</option>
             <option value="Medium">Medium</option>
             <option value="Large">Small</option>
           </select>
-        Quantity:<input type="text" name="quantity" maxlength="5" size="5"><br><br>
+        <label for="quantity">Quantity:</label>
+          <input id="quantity" type="text" name="quantity" maxlength="5" size="5">
+            <br><br>
     </fieldset>
     <fieldset>
       <legend>Credit Card Information</legend>
         Card Type:
-          <input type="radio" name="card" value="Visa"> Visa
-          <input type="radio" name="card" value="Master Card"> Master Card
-          <input type="radio" name="card" value="Discover">Discover<br>
-        Card Number:<input type="text" name="cardnumber"><br><br>
+          <input id="visa" type="radio" name="card" value="Visa">
+            <label for="visa">Visa</label>
+          <input id="mastercard" type="radio" name="card" value="Master Card">
+            <label for="mastercard">Master Card</label>
+          <input id="discover" type="radio" name="card" value="Discover">
+            <label for="discover">Discover</label>
+              <br>
+        <label for="cardnumber">Card Number:</label>
+          <input id="cardnumber" type="text" name="cardnumber">
+            <br><br>
     </fieldset>
 
-  <input type="submit" value="Submit">
-</form>
+          <input type="submit" value="Submit">
+
+  </form>
 </body>
 </html>
